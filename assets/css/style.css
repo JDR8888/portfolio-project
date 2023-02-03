@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container {
     display: flex;
@@ -13,11 +14,17 @@ header {
     border-bottom: 10px solid slateblue;
     margin-bottom: 5px;
     text-align: center;
-    background-color: aquamarine;
+    background-color: darkslategray;
     width: 100%;
+    border-bottom-left-radius: 20%;
+    outline: 10px solid maroon;
 }
 h1 { 
     font-size: 2.5em;
+    color: bisque;
+}
+h3 {
+    color: bisque;
 }
 #pfp { /*id to target profile pic but not other images */
     margin: 5px;
@@ -26,7 +33,9 @@ h1 {
 }
 
 nav {
-    border: 3px solid black;
+    border: 5px solid maroon;
+    outline: 5px solid slateblue;
+    background-color: darkslategray;
     border-radius: 100%;
     align-self: center;
     width: 40%;
@@ -39,17 +48,18 @@ nav li {
     list-style-type: none;
     width: fit-content;
     margin-left: 25px;
+    rotate: -20deg;
 }
 nav li a {
     text-decoration: none;
-    color:black;
+    color:bisque;
     font-size: 2.2em;
-    box-shadow: inset 0 0 0 0 cyan;
+    box-shadow: inset 0 0 0 0 maroon;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 nav li a:hover {
-    box-shadow: inset 150px 0 0 0 slateblue;
-    color: #69213f;
+    box-shadow: inset 150px 0 0 0 bisque;
+    color: maroon;
 }
 h2 {
     width: 100%;
@@ -58,7 +68,11 @@ h2 {
 main {
     margin-top: 10px;
     border-top: 10px solid slateblue;
-    border-bottom: 10px solid slategray;
+    outline: 10px solid maroon;
+    border-top-left-radius: 20%;
+    border-bottom: 10px solid darkslategray;
+    background-color: bisque;
+    color: darkslategray;
 }
 #about {
     text-indent: 25px;
@@ -95,20 +109,22 @@ main {
 
 }
 footer {
-    border-top: 10px solid slateblue;
-    background-color: aquamarine;
+    border-top: 15px solid slateblue;
+    background-color: darkslategray;
     margin-top: 5px;
     width: 100%;
     display: flex;
     height: 100px;
     align-items: center;
     justify-content: space-evenly;
+    border-top-right-radius: 20%;
+    outline: 15px solid maroon;
 }
 .contact {
 }
 .contact a {
     text-decoration: none;
-    color: black;
+    color: bisque;
 }
 @media screen and (min-width:768px) {
     .container {
