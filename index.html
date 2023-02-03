@@ -4,32 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <title>JDR | Portfolio</title>
 </head>
 <body>
     <!-- some div as the main flex container -->
-    
-    <div class="container">
-        <header>
-            <h1> Jake Rudlong</h1>
-            <!-- <img /> goes here -->
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#contact">Projects</a></li>
-                <li><a href="#projects">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-        <main>
-            <!-- this will be its own container -->
-        </main>
-        <aside>
+    <header>
+      <h1> Jake Rudlong</h1>
+      <img id="pfp" src="assets\peter-css.gif" alt="funny css gif" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>    
+    <main>
+            <!-- this will be its own container with display:flex -->
+      <div class="card">
+        <a href="https://github.com/JDR8888/seo-challenge" ><img src="assets/seo-img.jpg" /> </a> <!-- an image that is a link-->
+        <p>SEO Project</p> <!--fixed-pos text box -->            
+      </div>
+      <div class="card">
+        <a href="https://jdr8888.github.io/prework-study-guide/"><img src="assets/study-guide-img.jpg" /> </a> <!-- an image that is a link-->
+        <p>Study Guide</p> <!--fixed-pos text box -->            
+      </div>
+      <div class="card">
+        <a href="https://github.com/JDR8888/seo-challenge" ><img src="assets/seo-img.jpg" /> </a> <!-- an image that is a link-->
+          <p>SEO Project</p> <!--fixed-pos text box -->            
+        </div>
+        <div class="card">
+          <a href="https://jdr8888.github.io/prework-study-guide/" ><img src="assets/seo-img.jpg" /> </a> <!-- an image that is a link-->
+          <p>SEO Project</p> <!--fixed-pos text box -->            
+      </div>
+    </main>
+    <aside>
             <!-- this will be a sidebar on larger screens with a column displaying icons -->
-        </aside>
-
-    </div>
+    </aside>
+    <footer>
+      <div class="contact" id="contact"><a href="mailto:jrudlong@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email me</a></div>
+      <div class="contact"><a href="https://twitter.com/jrudlong"><i class="fa fa-twitter"></i> My Twitter</a></div>
+      <div class="contact"><a href="https://www.linkedin.com/in/jacob-rudlong-0476b6107/"><i class="fa fa-linkedin"></i> My LinkedIn</a></div>
+      <div class="contact"><a href="https://github.com/JDR8888"><i class="fa fa-github"></i> My Github</a></div>
+    </footer>
 </body>
 </html>

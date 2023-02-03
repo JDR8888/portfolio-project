@@ -8,7 +8,7 @@ N/A
 # Usage
 
 # Credits
-
+giphy.com; forthebadge.com; Columbia U;
 # License
 
 Please see the repo for license info

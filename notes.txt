@@ -1,1 +1,22 @@
-INSIDE THE FLEX CONTAINER: 1st item: header element containing my name and a pic; #2 a nav element as first two items, then #3 a main element that is its own flexbox that will be the projects portion of the page. inside the main element are "cards" that display a link-image with a fixed textbox in one corner that states the title of the project with semi-transparent background so it doesn't cover up too much of the project img. #4 will be an aside item with icons displaying skills known, like icons for html, css, js, react, etc. (may not do this for the first version of this website). #5 footer containing links (as icons) for github, LinkedIn, and a mailto:email link.
+INSIDE THE FLEX CONTAINER: 
+1st item: header element containing my name and a pic; 
+#2 a nav element as first two items, then 
+#3 a main element that is its own flexbox that will be the projects portion of the page.        
+    inside the main element are "cards" that display a link-image with a fixed textbox in one corner that states the title of the project with semi-transparent background so it doesn't cover up too much of the project img. 
+#4 will be an aside item with icons displaying skills known, like icons for html, css, js, react, etc. (may not do this for the first version of this website). 
+#5 footer containing links (as icons) for github, LinkedIn, and a mailto:email link.
+
+***REQUIREMENTS***
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+
+WHWHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applicationsEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
