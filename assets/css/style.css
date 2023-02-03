@@ -1,74 +1,83 @@
 /* mobile is global mobile is global mobile is global */
 
-* {
-    box-sizing: border-box;
-}
 body {
     margin: 0;
+}
+.container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 100vh;
-}
-
-header {  
-    border: 5px solid red;
     align-items: center;
-    display: ;
+}
+header {  
+    border-bottom: 10px solid slateblue;
+    margin-bottom: 5px;
     text-align: center;
-    justify-content: last baseline;
     background-color: aquamarine;
+    width: 100%;
 }
 h1 { 
-    font-size: 2em;
-    display: flow-root;
-    border: 5px solid black;
+    font-size: 2.5em;
 }
 #pfp { /*id to target profile pic but not other images */
     margin: 5px;
     width: fit-content;
+    height: auto;
 }
+
 nav {
-    border: 5px solid red;
+    border: 3px solid black;
     border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 88px;
-    transform: rotate(15deg);
+    align-self: center;
+    width: 40%;
+    padding: 55px;
+    margin: 15px 0px;
 }
-nav:hover {
-    background-image: url(/assets/wut.gif);
-}
+
 nav li {
     padding: 10px;
     list-style-type: none;
-    border: 5px solid;
     width: fit-content;
-
+    margin-left: 25px;
 }
 nav li a {
     text-decoration: none;
-    border: solid blue;
     color:black;
+    font-size: 2.2em;
     box-shadow: inset 0 0 0 0 cyan;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 nav li a:hover {
-    box-shadow: inset 150px 0 0 0 blue;
+    box-shadow: inset 150px 0 0 0 slateblue;
     color: #69213f;
 }
+h2 {
+    width: 100%;
+    text-align: center;
+}
 main {
-    border: 5px solid yellow;
+    margin-top: 10px;
+    border-top: 10px solid slateblue;
+}
+#about {
+    text-indent: 25px;
+    padding: 0px 25px;
+}
+.project-box {
+    margin-top: 10px;
+    border-top: 10px solid slategray;
     display: flex;
     margin-top: 5px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .card {
     border: 5px solid;
     margin: 5px;
-
+    flex: 50%;
 }
-main img {
+.thumbnail {
     width: 100%;
     border: 5px solid blue;
 
@@ -77,6 +86,28 @@ div p {
     border: 5px solid blue;
 }
 footer {
-    border: 5px solid red;
+    border-top: 10px solid slateblue;
+    background-color: aquamarine;
     margin-top: 5px;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact {
+}
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (min-width:768px) {
+    .container {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    nav:hover {
+        background-image: url(/assets/wut.gif);
+    }
+    
 }
