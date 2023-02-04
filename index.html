@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <!-- <base target="_blank" /> -->
-    <title>JDR | Portfolio</title>
+    <title> JDR | '<*_*>' </title>
 </head>
 <body>
     <div class="container"> <!--FLEXBOX BEGINS HERE -->
-      <header>
+      <!-- i want a fixed header that spans the width of the page and centered nicely will be my pic (or placeholder img/gif), with my name above the pic and a one-line statement about me -->
+      <header> 
         <h1> Jake Rudlong</h1>
         <img id="pfp" src="./assets/peter-css.gif" alt="funny css gif" />
         <h3>Aspiring Web Developer/Designer</h3>
       </header>
+      <!-- i want an interesting nav box that stands separate from the header but with a similar color theme and some indication that the items in the nav are links, i.e. something should happen on hover -->
       <nav>
         <ul>
           <li><a href="#card1">Projects</a></li>
@@ -25,10 +27,12 @@
           <li><a href="#bio">About</a></li>
         </ul>
       </nav>
+      <!-- i need a bio/about section that for now will just be filled with lorem text or whatever -->
       <main>
         <h2 id="bio">About Me</h2>
         <p>Something interesting etcetera. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt numquam necessitatibus praesentium, soluta, magni nostrum ratione quam molestiae eos non architecto at? Maxime consectetur harum ullam quisquam, consequuntur porro culpa! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem illo, perferendis maiores quaerat id recusandae a maxime repellat expedita, architecto quo dolorum ex deleniti, accusantium deserunt dolorem error quasi. Minus? Lorem ipsum dolor sit, amet consectetur adipisicing elit.WALDO Modi error fugit voluptatem? Aspernatur ad repudiandae necessitatibus neque magnam debitis possimus quaerat itaque porro aliquid, voluptas, vitae esse! Asperiores, minus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat dolorem voluptate nostrum officiis architecto alias quas vel consequatur? Porro facilis pariatur cum provident dolores minima explicabo ducimus saepe asperiores.</p>
       </main>     
+      <!-- next comes the projects section which will be it's own flexbox container which will have individual cards that contain an image as a link and a small title card/description that should partially cover the image. the first 'card' needs to be larger than all the others and on smaller screens should take up the full width. i may need to make each card it's own flexbox but would like to just use positioning within each card to set the description box in the bottom right corner. when an image for a given project is clicked it needs to take the user to the deployed project url.  -->
       <h2>Projects</h2>
       <div class="project-box">
         <div class="card">
@@ -37,8 +41,8 @@
           <div class="description"><h3> SEO/Accessibility Project</h3></div>
         </div>
         
-
       </div>
+      <!-- after the project box i have my footer at the very bottom of the page. like the header, it will take up the full width of the page. this is where all of my contact/connect/social media links will be and clicking on the contact link in the nav box needs to take me to the footer. the links in the footer (which will be displayed as icons) will take the user to the given social media site or will open a window to send me an email  -->
       <footer>
         <div class="contact" id="contact"><a href="mailto:jrudlong@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email me</a></div>
         <div class="contact"><a href="https://twitter.com/jrudlong"><i class="fa fa-twitter"></i> My Twitter</a></div>
