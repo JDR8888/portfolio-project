@@ -1,7 +1,7 @@
 ## Module 2 Challenge (Columbia Bootcamp)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
 # Description
-This page is a challenge project using flexbox/css knowledge learned in class to create a responsive personal portfolio website with the following acceptance criteria:
+This page is a challenge project using flexbox/CSS knowledge learned in class to create a responsive personal portfolio website with the following acceptance criteria:
 GIVEN I need to sample a potential employee's previous work
 - WHEN I load their portfolio THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 - WHEN I click one of the links in the navigation THEN the UI scrolls to the corresponding section
