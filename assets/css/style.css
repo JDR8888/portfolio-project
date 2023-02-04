@@ -7,8 +7,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    padding: 20px;
 }
 header {  
     border-bottom: 10px solid slateblue;
@@ -16,7 +16,7 @@ header {
     text-align: center;
     background-color: darkslategray;
     width: 100%;
-    border-bottom-left-radius: 20%;
+    border-bottom-left-radius: 42%;
     outline: 10px solid maroon;
 }
 header:hover {
@@ -39,8 +39,8 @@ h3 {
 }
 
 nav {
-    border: 5px solid maroon;
-    outline: 5px solid slateblue;
+    border: 10px solid maroon;
+    outline: 10px solid slateblue;
     background-color: bisque;
     border-radius: 100%;
     align-self: center;
@@ -54,7 +54,6 @@ nav li {
     list-style-type: none;
     width: fit-content;
     margin-left: 25px;
-    rotate: -20deg;
 }
 nav li a {
     text-decoration: none;
@@ -80,6 +79,11 @@ main {
     background-color: darkslategray;
     color: bisque;
     transform: skew(-45deg);
+}
+main p {
+    font-family: "Gill Sans", sans-serif;
+    line-height: 2.5em;
+    font-optical-sizing: auto;
 }
 main:hover {
     transform: none;
@@ -118,7 +122,7 @@ footer {
     height: 100px;
     align-items: center;
     justify-content: space-evenly;
-    border-top-right-radius: 20%;
+    border-top-left-radius: 42%;
     outline: 15px solid maroon;
 }
 .contact {
