@@ -9,7 +9,13 @@ GIVEN I need to sample a potential employee's previous work
 - WHEN I am presented with the developer's first application THEN that application's image should be larger in size than the others
 - WHEN I click on the images of the applications THEN I am taken to that deployed application
 - WHEN I resize the page or view the site on various screens and devices THEN I am presented with a responsive layout that adapts to my viewport 
-The deployed page is:
+The deployed page is: https://jdr8888.github.io/project-02/"
+The github repo is https://github.com/JDR8888/project-02
+
+Screenshot of the page:
+
+![screenshot of project](assets/project-02.jpg)
+
 
 # Installation
 N/A
