@@ -1,5 +1,10 @@
 /* mobile is global mobile is global mobile is global */
 
+:root {
+--color-1: #338091;
+--color-2: #9c3838;
+--color-3: #0f3461;
+}
 body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -11,13 +16,13 @@ body {
     padding: 20px;
 }
 header {  
-    border-bottom: 10px solid slateblue;
+    border-bottom: 10px solid var(--color-1);
     margin-bottom: 5px;
     text-align: center;
-    background-color: darkslategray;
+    background-color: var(--color-3);
     width: 100%;
     border-bottom-left-radius: 42%;
-    outline: 10px solid maroon;
+    outline: 10px solid var(--color-2);
 }
 header:hover {
         rotate: 180deg;
@@ -39,8 +44,8 @@ h3 {
 }
 
 nav {
-    border: 10px solid darkslategray;
-    outline: 10px solid slateblue;
+    border: 10px solid var(--color-3);
+    outline: 10px solid var(--color-1);
     background-color: bisque;
     border-radius: 100%;
     width: 40%;
@@ -58,12 +63,12 @@ nav li a {
     text-decoration: none;
     color: black;
     font-size: 2.5em;
-    text-shadow: maroon 2px 10px 10px;
+    text-shadow: var(--color-2) 2px 10px 10px;
     border-radius: 20%;
     transition: color .3s ease-in-out;
 }
 nav li a:hover {
-    color: maroon;
+    color: var(--color-2);
     text-shadow: none;
 }
 h2 {
@@ -72,10 +77,10 @@ h2 {
 }
 main {
     margin-top: 10px;
-    border: 10px solid darkslateblue;
-    outline: 10px solid maroon;
+    border: 10px solid var(--color-1);
+    outline: 10px solid var(--color-2);
     border-top-left-radius: 20%;
-    background-color: darkslategray;
+    background-color: var(--color-3);
     color: bisque;
     transform: skew(-45deg);
 }
@@ -102,7 +107,7 @@ main:hover {
     align-items: center;
 }
 .project-box h2 {
-    color: maroon;
+    color: var(--color-2);
     background-color: bisque;
     width: 50%;
     padding: 2%;
@@ -114,8 +119,8 @@ main:hover {
     width: 40%;
     align-items: center;
     /* padding:25px 5px 5px 15px; */
-    border: 3px solid darkslategray;
-    outline: 3px solid maroon;
+    border: 3px solid var(--color-3);
+    outline: 3px solid var(--color-2);
     flex-direction: column;
     border-top-left-radius: 10%; 
     margin: 1%;
@@ -132,15 +137,15 @@ main:hover {
 }
 /* i want the first card bigger than the other cards so giving it specific id which will also be connected to the nav link to projects */
 .description {
-    background-color: maroon;
+    background-color: var(--color-2);
     order: -1;
     color: bisque;
     border-radius: 50%;
 }
 
 footer {
-    border-top: 15px solid slateblue;
-    background-color: darkslategray;
+    border-top: 15px solid var(--color-1);
+    background-color: var(--color-3);
     margin-top: 35px;
     width: 100%;
     display: flex;
@@ -148,7 +153,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     border-top-left-radius: 42%;
-    outline: 15px solid maroon;
+    outline: 15px solid var(--color-2);
 }
 .contact {
 }
@@ -159,7 +164,7 @@ footer {
 }
 .contact a:hover {
     box-shadow: inset 150px 0 0 0 bisque;
-    color: maroon;
+    color: var(--color-2);
 }
 
 /* started small now adapting for larger screens mostly just keeping the nav a circle as we make the screen wider, so that the nav elements actually stay inside and it looks better*/
