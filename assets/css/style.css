@@ -1,21 +1,24 @@
 /* mobile is global mobile is global mobile is global */
-
+/* these 4 colors will be my primary theme so i am setting them as variables since each repeats several times */
 :root {
 --color-1: #338091;
 --color-2: #9c3838;
 --color-3: #0f3461;
 --color-4: bisque;
 }
+/*serif font for everything unless specified, and for the container to fill the entire width of the page */
 body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* flex container will be columns for phone/tablet screen */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
+/* header spans width of page and has a nice curved edge, follows the color scheme */
 header {  
     border-bottom: 10px solid var(--color-1);
     margin-bottom: 5px;
@@ -25,6 +28,8 @@ header {
     border-bottom-left-radius: 42%;
     outline: 10px solid var(--color-2);
 }
+
+/* initially, pfp and h1 (my name) will be upside down, but the entire header will flip 180deg when hovered over, making my name and pfp upright but my subtitle upside-down, a fun little setup to go along with the relevant pfp */
 header:hover {
         rotate: 180deg;
 }
@@ -46,6 +51,7 @@ header h2 {
     background-repeat: no-repeat;
 }
 
+/* nav stands alone separate from the header and will be a circle that adjusts width w/screen-size changes to stay a nice circle */
 nav {
     border: 10px solid var(--color-3);
     outline: 10px solid var(--color-1);
@@ -59,9 +65,9 @@ nav {
 nav li {
     padding: 10px;
     list-style-type: none;
-    width: fit-content;
     margin-left: 25px;
 }
+/* nav links will have a shadow that seems to jump to the text, resulting in the text becoming the color of the shadow, seen in the :hover portion */
 nav li a {
     text-decoration: none;
     color: var(--color-3);
@@ -78,6 +84,7 @@ h2 {
     width: 100%;
     text-align: center;
 }
+/* the form is pretty basic and (along with the button) follows the color scheme */
 .my-form {
     border: 10px dashed var(--color-4);
     outline: 10px solid var(--color-1);
@@ -93,35 +100,32 @@ button {
     background-color: var(--color-3);
     color: var(--color-4);
 }
+
+/* a basic bio/about box w/ color scheme */
 main {
-    margin: 5% 1% 10% 1%;
+    margin: 5% 1% 1% 1%;
     border: 10px solid var(--color-1);
     outline: 10px solid var(--color-2);
     border-top-left-radius: 20%;
     background-color: var(--color-3);
     color: var(--color-4);
 }
+/* a nice, readable font for the paragraph with line-height increased for better reading and less scrunching together. the padding serves the same purpose with just a little on the sides */
 main p {
     font-family: "Gill Sans", sans-serif;
     line-height: 2.5em;
     padding: 5% 2% 1% 2%;
 }
-main:hover {
-    transform: none;
-}
-#about {
-    text-indent: 25px;
-    padding: 0px 25px;
-}
+
+/* project-box is a nested flexbox with column direction that will change w/bigger screen */
 .project-box {
     width: 100%;
     margin-top: 10px;
     display: flex;
     margin-top: 25px;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; /*smaller cards look a bit nicer w/align-items set */
 }
 .project-box h2 {
     color: var(--color-2);
@@ -129,8 +133,8 @@ main:hover {
     width: 50%;
     padding: 2%;
     border-radius: 50%;
-    font-size: ;
 }
+/* yet another flex dimension, the individual cards have display:flex to make lining up the title/description with the thumbnail easier */
 .card {
     display: flex;
     width: 40%;
@@ -143,16 +147,16 @@ main:hover {
     margin: 1%;
 }
 #card-1 {
-    flex-grow: 2;
     width: 60%;
 }
 
 .project-link img {
     width: 90%;
     height: auto;
-    margin-left: 10%;
+    margin-left: 10%; 
 }
-/* i want the first card bigger than the other cards so giving it specific id which will also be connected to the nav link to projects */
+
+/* smaller font-size for smaller screen, will grow w/ bigger screensizes.  */
 .description {
     background-color: var(--color-2);
     order: -1;
@@ -163,6 +167,7 @@ main:hover {
     text-align: center;
 }
 
+/* footer is the contact/social-media section, using space-evenly to nicely spread the links/icons across the footer. follows color scheme and has 1 rounder corner similar to header  */
 footer {
     border-top: 15px solid var(--color-1);
     background-color: var(--color-3);
@@ -175,8 +180,8 @@ footer {
     border-top-left-radius: 42%;
     outline: 15px solid var(--color-2);
 }
-.contact {
-}
+
+/* gets rid of underline and sets up for a nice little effect w/box shadow seen in the hover pseudo class, w/text color becoming the shadow color */
 .contact a {
     text-decoration: none;
     color: var(--color-4);
@@ -187,13 +192,8 @@ footer {
     color: var(--color-2);
 }
 
-/* started small now adapting for larger screens mostly just keeping the nav a circle as we make the screen wider, so that the nav elements actually stay inside and it looks better*/
+/* flex-direction shifts from column to row w/screen width increasing, project cards will be 2 per row instead of 1, and description tag text increases in size. nav width % decreases to remain as close to a circle as possible */
 
-@media screen and (min-width:650px) {
-    .project-box {
-        flex-direction: ;
-    }
-}
 @media screen and (min-width:800px) {
     .container {
         flex-flow: row wrap;
@@ -211,6 +211,7 @@ footer {
     }
 }
 
+/* at 1100px, the form section and the about section are side-by-side, and the about section has a slight skew effect that goes away with hover. nav adjusts width% again and certain text increases as needed to look better */
 @media screen and (min-width: 1100px) {
     .container {
         flex-direction: row;
