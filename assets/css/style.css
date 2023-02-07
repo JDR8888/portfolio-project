@@ -46,13 +46,6 @@ header h2 {
     background-repeat: no-repeat;
 }
 
-.note {
-    background-image: url(/assets/note.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 150px;
-}
 nav {
     border: 10px solid var(--color-3);
     outline: 10px solid var(--color-1);
