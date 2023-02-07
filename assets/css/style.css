@@ -101,7 +101,7 @@ button {
     color: var(--color-4);
 }
 
-/* a basic bio/about box w/ color scheme */
+/* a basic bio/about box w/ color scheme, margin tweaked to look better */
 main {
     margin: 5% 1% 1% 1%;
     border: 10px solid var(--color-1);
