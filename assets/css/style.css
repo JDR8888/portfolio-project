@@ -4,6 +4,7 @@
 --color-1: #338091;
 --color-2: #9c3838;
 --color-3: #0f3461;
+--color-4: bisque;
 }
 body {
     margin: 0;
@@ -29,11 +30,13 @@ header:hover {
 }
 h1 { 
     font-size: 2.5em;
-    color: bisque;
+    color: var(--color-4);
     rotate: 180deg;
 }
-h3 {
-    color: bisque;
+header h2 {
+    color: var(--color-4);
+    width: 80%;
+    margin-left: 20%;
 }
 #pfp { /*id to target profile pic but not other images */
     margin: 5px;
@@ -43,14 +46,21 @@ h3 {
     background-repeat: no-repeat;
 }
 
+.note {
+    background-image: url(/assets/note.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+}
 nav {
     border: 10px solid var(--color-3);
     outline: 10px solid var(--color-1);
-    background-color: bisque;
+    background-color: var(--color-4);
     border-radius: 100%;
     width: 40%;
     padding: 55px;
-    margin: 15px 0px;
+    margin: 10% 20% 5% 20%;
 }
 
 nav li {
@@ -61,9 +71,9 @@ nav li {
 }
 nav li a {
     text-decoration: none;
-    color: black;
+    color: var(--color-3);
     font-size: 2.5em;
-    text-shadow: var(--color-2) 2px 10px 10px;
+    text-shadow: var(--color-2) 2px 10px 2px;
     border-radius: 20%;
     transition: color .3s ease-in-out;
 }
@@ -75,19 +85,33 @@ h2 {
     width: 100%;
     text-align: center;
 }
+.my-form {
+    border: 10px dashed var(--color-4);
+    outline: 10px solid var(--color-1);
+    background-color: var(--color-2);
+    padding: 10%;
+    margin: 10% 10% 10% 10%;
+    color: var(--color-3);
+}
+input {
+    text-shadow: var(--color-2) 2px 2px 2px;
+}
+button {
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
 main {
-    margin-top: 10px;
+    margin: 5% 1% 10% 1%;
     border: 10px solid var(--color-1);
     outline: 10px solid var(--color-2);
     border-top-left-radius: 20%;
     background-color: var(--color-3);
-    color: bisque;
-    transform: skew(-45deg);
+    color: var(--color-4);
 }
 main p {
     font-family: "Gill Sans", sans-serif;
     line-height: 2.5em;
-    padding: 10px;
+    padding: 5% 2% 1% 2%;
 }
 main:hover {
     transform: none;
@@ -101,14 +125,14 @@ main:hover {
     margin-top: 10px;
     display: flex;
     margin-top: 25px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 .project-box h2 {
     color: var(--color-2);
-    background-color: bisque;
+    background-color: var(--color-4);
     width: 50%;
     padding: 2%;
     border-radius: 50%;
@@ -127,20 +151,23 @@ main:hover {
 }
 #card-1 {
     flex-grow: 2;
-    flex: 100%;
+    width: 60%;
 }
 
 .project-link img {
-    width: 80%;
+    width: 90%;
+    height: auto;
     margin-left: 10%;
-    order: 1;
 }
 /* i want the first card bigger than the other cards so giving it specific id which will also be connected to the nav link to projects */
 .description {
     background-color: var(--color-2);
     order: -1;
-    color: bisque;
+    color: var(--color-4);
     border-radius: 50%;
+    width: 50%;
+    font-size: .5em;
+    text-align: center;
 }
 
 footer {
@@ -159,36 +186,75 @@ footer {
 }
 .contact a {
     text-decoration: none;
-    color: bisque;
+    color: var(--color-4);
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 .contact a:hover {
-    box-shadow: inset 150px 0 0 0 bisque;
+    box-shadow: inset 150px 0 0 0 var(--color-4);
     color: var(--color-2);
 }
 
 /* started small now adapting for larger screens mostly just keeping the nav a circle as we make the screen wider, so that the nav elements actually stay inside and it looks better*/
-@media screen and (min-width:850px) {
+
+@media screen and (min-width:650px) {
+    .project-box {
+        flex-direction: ;
+    }
+}
+@media screen and (min-width:800px) {
     .container {
         flex-flow: row wrap;
         justify-content: space-around;
     }
     nav {
-        width: 30%;
+        width: 35%;
     } 
     .project-box {
-        flex-direction: ;
+        flex-flow: row wrap;
+    }
+    .description {
+        text-align: center;
+        font-size: 1.5vmin;
     }
 }
-@media screen and (min-width: 1200px) {
-    nav {
-        width: 20%;
-    }
-    .card {
-        flex: 33%;
-    }
 
-}
+@media screen and (min-width: 1100px) {
+    .container {
+        flex-direction: row;
+    }
+    header h1 {
+        font-size: 3.5em;
+    }
+    header h2 {
+        margin-left: 10%;
+    }
+    nav {
+        width: 25%;
+        align-self: center;
+    }
+    .my-form {
+        width: 20%;
+        margin: 1% 1% 1% 1%;
+    } 
+    main {
+        margin-top: 10px;
+        transform: skew(-20deg);
+        width: 45%;
+    }
+    main p {
+        font-family: "Gill Sans", sans-serif;
+        line-height: 2.5em;
+        padding: 10px;
+    }
+    main:hover {
+        transform: none;
+    }
+    .description {
+        font-size: 1em;
+    }
+}    
+
+
 @media screen and (min-width: 1800px) {
     nav {
         width: 15%;
